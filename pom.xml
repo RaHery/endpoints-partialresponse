@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.aodocs.endpoints</groupId>
     <artifactId>endpoints-partialresponse</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <name>Partial response support for Cloud Endpoints v2</name>
     <description>This project provides an implementation of EndpointsServlet with partial response support using "fields" parameter in Discovery-based APIs.</description>
@@ -34,13 +32,14 @@
         <antlr4.version>4.7.1</antlr4.version>
 
         <endpoints-framework.version>2.2.0</endpoints-framework.version>
-        <developerConnection></developerConnection>
+        <developerConnection />
     </properties>
 
     <scm>
         <developerConnection>${developerConnection}</developerConnection>
         <connection>${developerConnection}</connection>
-    </scm>
+      <tag>1.0</tag>
+  </scm>
 
     <dependencies>
         <!--Utils-->
