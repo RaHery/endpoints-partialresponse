@@ -75,7 +75,7 @@ public class FieldsExpressionNode {
 	 * @return true if this node is either :
 	 * - a direct leaf
 	 * - or a transitive leaf (ie: has a wildcard+transitiveLeaf child)
-	 */
+	 */it s
 	public boolean isTransitiveLeaf() {
 		return isLeaf() || FluentIterable.from(children).anyMatch(new Predicate<FieldsExpressionNode>() {
 			@Override
@@ -173,7 +173,7 @@ public class FieldsExpressionNode {
 		
 		/**
 		 * Creates a new root node with the provided children.
-		 * Example: ofChildren("a", "b", "c") ⇒ root → a, b, c
+		 * Example: ofChildren("a", "b", "c") =&gt; root -&gt; a, b, c
 		 *
 		 * @param childValues
 		 * @return the root node containing the children
@@ -188,7 +188,7 @@ public class FieldsExpressionNode {
 		
 		/**
 		 * Creates a new root node with the provided "branch".
-		 * Example: ofBranch("a", "b", "c") ⇒ root → a → b → c
+		 * Example: ofBranch("a", "b", "c") =&gt; root -&gt; a -&gt; b -&gt; c
 		 *
 		 * @param branchValues
 		 * @return the root node containing the branch
