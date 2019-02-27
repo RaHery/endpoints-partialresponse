@@ -45,7 +45,7 @@
             <!--Let implementors use their own version (might use the -all artifact)-->
             <scope>provided</scope>
         </dependency>
-        
+
         <!--Fields expression parsing-->
         <dependency>
             <groupId>org.antlr</groupId>
@@ -64,7 +64,7 @@
             <artifactId>google-api-services-discovery</artifactId>
             <version>v1-rev91-${http-client.version}</version>
         </dependency>
-        
+
         <!--Testing-->
         <dependency>
             <groupId>junit</groupId>
