@@ -49,7 +49,7 @@
         <!--Fields expression parsing-->
         <dependency>
             <groupId>org.antlr</groupId>
-            <artifactId>antlr4-runtime</artifactId>
+            <artifactId>antlr4</artifactId>
             <version>${antlr4.version}</version>
         </dependency>
         <!--JSON handling-->
@@ -59,11 +59,10 @@
             <version>${jackson.version}</version>
         </dependency>
         <!--Discovery resource analysis-->
-        <!--Note: endpoints-framework embeds its own version of discovery, without repackaging. It will shadow this dependency.-->
         <dependency>
             <groupId>com.google.apis</groupId>
             <artifactId>google-api-services-discovery</artifactId>
-            <version>v1-rev94-${http-client.version}</version>
+            <version>v1-rev91-${http-client.version}</version>
         </dependency>
 
         <!--Testing-->
